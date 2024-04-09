@@ -1,0 +1,590 @@
+
+@font-face {
+    font-family: Lastica;
+    src: url(resources/fonts/Lastica.ttf);
+}
+
+@font-face {
+    font-family: Interphase;
+    src: url(resources/fonts/Interphase.ttf);
+}
+
+@font-face {
+    font-family: Arvo;
+    src: url(resources/fonts/Arvo.ttf);
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-item {
+    font-family: Lastica;
+}
+.nav-link {
+    color: white !important;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 0 2rem;
+    margin: 2rem auto;
+}
+
+.navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 3px solid whitesmoke;
+}
+
+.navbar-style
+{
+    background: linear-gradient(to right, #844EEA, #5527F5, #041069);
+    color: white; 
+    font-weight: 800;
+}
+
+#home-entry-video {
+    width: 100%;
+    height: 100vh;   /** Change this as video's height on screen */
+    object-fit: cover;
+    pointer-events: none; /* This ensures the video doesn't interfere with other elements */
+}
+
+.home-features {
+    margin: 0;
+    padding-bottom: 2rem;
+    background: linear-gradient(to right, #844EEA, #5527F5, #041069);
+    /* height: 100vh; */
+}
+
+.home-features h1 {
+    color: azure;
+    font-family: Lastica;
+    font-weight: 500;
+    text-align: center;
+    padding: 6rem 0;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.home-features td {
+    width: 50%;
+}
+
+.home-features table {
+    margin-bottom: 5rem;
+}
+
+.home-features h2 {
+    text-align: center;
+    font-family: Lastica;
+    padding: 0 2rem ;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.feat-1 {
+    width: 80%;
+    height: auto;
+    border-radius: 20%;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.feat-2 {
+    width: 50%;
+    height: auto;
+    margin-left: 13rem;
+    border-radius: 20%;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.feat-3 {
+    width: 50%;
+    height: auto;
+    margin-left: 7rem;
+    border-radius: 20%;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.home-how {
+    padding-bottom: 3rem;
+}
+
+.home-how h1 {
+    font-family: Lastica;
+    color: #041069;
+    text-align: center;
+    padding: 4rem;
+    font-size: 3rem;
+}
+
+#Features {
+    padding: 2rem auto 4rem;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+    font-family: Interphase;
+}
+
+.feature-icon {
+    color: #4F98CA;
+    padding-bottom: 1rem;
+}
+
+.feature-icon:hover {
+    color: chocolate;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.SVG1 {
+    width: 6rem;
+    margin-bottom: 1rem;
+}
+
+.SVG2 {
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#Features p {
+    padding: 0 12rem;
+}
+
+
+.shift-down {
+    margin-top: 6.5rem;
+}
+nav {
+    transition: all 1.3s ease-in-out;
+    background: transparent;
+    opacity: 0;
+}
+nav.scrolled,check {
+    /* transition: background 1s ease-in-out; */
+    background: linear-gradient(to right, #844EEA, #5527F5, #041069) !important;
+    opacity: 1;
+}
+
+/* #home {
+    background-color: red;
+}
+#team {
+    background-color: white;
+}
+#other {
+    background-color: blue;
+} */
+
+.team-meet {
+    background: linear-gradient(to right, #844EEA, #5527F5, #041069) !important; 
+    font-family: Lastica;
+    color: rgb(228, 220, 220);
+    font-size: 5rem;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+#team-meet-text {
+    padding-top: 13%;
+}
+
+.robocup-built {
+    background: linear-gradient(to right, #844EEA, #5527F5, #041069) !important; 
+    font-family: Lastica;
+    color: rgb(228, 220, 220);
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+#robocup-built-text {
+    padding-top: 13%;
+}
+
+.middle {
+    position: absolute;
+    top: 720px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouse {
+    width: 40px;
+    height: 70px;
+    border: 2px solid #333;
+    border-radius: 60px;
+}
+.mouse::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 720px;
+    background: #333;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 20px;
+    }
+    to {
+        opacity: 0;
+        top: 60px;
+    }
+}
+
+.team-together {
+    background: radial-gradient(circle at 50% 50%, #131FA8, #5527F5, #041069);
+}
+
+.team-together h2 {
+    font-family: Lastica;
+    color: rgb(228, 220, 220);
+    font-size: 3rem;
+    text-align: center;
+    height: 50vh;
+    padding-top: 9%;
+}
+
+.skills {
+    padding-bottom: 3rem;
+}
+
+.skill-row {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 6rem;
+}
+
+.skillpic {
+    border:#041069 solid 1px;
+    border-style: double;
+}
+
+.skillpic:hover {
+    transform: scale(1.4);
+    transition-duration: 350ms;
+}
+
+#Services {
+    padding: 3rem 2rem 0rem;
+    text-align: center;
+    background-size: contain;
+    color: #5527F5;
+    font-family: Arvo;
+}
+
+#Services h3 {
+    color: #041069;
+    font-weight: 900;
+    font-size: 2rem;
+    padding-top: 2rem;
+    /* margin-bottom: 3rem; */
+}
+#Services p {
+    font-weight: 700;
+}
+
+#veniPic {
+    max-width: 20%;
+    border-radius: 90%;
+    float: left;
+    margin-right: 30px;
+}
+
+footer {
+    text-align: center;
+    font-family: Interphase;
+    padding: 1rem;
+}
+
+#pindPic {
+    max-width: 20%;
+    border-radius: 90%;
+    float: right;
+    margin-left: 30px;
+}
+
+#letaRobo {
+    max-width: 28%;
+    border-radius: 10%;
+    float: right;
+    margin-left: 30px;
+}
+#kumbhDaanPic {
+    max-width: 20%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 90%;
+}
+
+#kumbhMelaPic {
+    max-width: 20%;
+    border-radius: 90%;
+    float: right;
+    margin-left: 30px;
+}
+
+#gangaAartiPic {
+    max-width: 20%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 90%;
+}
+
+#pushpanjaliPic {
+    max-width: 20%;
+    border-radius: 90%;
+    float: right;
+    margin-left: 30px;
+}
+
+
+.last-service-row {
+    padding-bottom: 4rem;;
+}
+
+
+#anushka-logo {
+    width: 50%;
+    height: auto;
+}
+
+
+.about-robocup {
+    padding: 5rem 2rem 3rem;
+    text-align: center;
+    background-size: contain;
+    color: #5527F5;
+    font-family: Interphase;
+}
+
+.about-robocup h2 {
+    color: #041069;
+    font-weight: 900;
+    font-size: 2.5rem;
+    /* margin-bottom: 3rem; */
+    font-family: Lastica;
+}
+.about-robocup p {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#robocup-image {
+    width: 26rem;
+    height: auto;
+    border-radius: 30%;
+    margin-right: 7rem;
+}
+
+.patla {
+    padding: 2rem 12rem;
+    text-align: left;
+}
+
+.approachClass {
+    padding-bottom: 3rem;
+}
+
+
+.approach-row {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 7rem;
+}
+
+.approachPic:hover {
+    transform: scale(1.4);
+    transition-duration: 350ms;
+}
+
+.approachPic {
+    border-radius: 0%;
+}
+
+#Approach {
+    padding: 5rem 2rem 0rem;
+    background: radial-gradient(circle at 50% 50%, #131FA8, #5527F5, #041069);
+    text-align: center;
+    background-size: contain;
+    color: #5527F5;
+    font-family: Arvo;
+}
+
+#Approach h4 {
+    text-align: left;
+    width: 85%;
+    padding-left: 13rem;
+    font-family: Arvo;
+    font-size: large;
+    color: silver;
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#Approach h3 {
+    color: #b7e4fa;
+    font-weight: 900;
+    font-size: 2rem;
+    /* margin-bottom: 3rem; */
+}
+
+#Approach h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-family: Lastica;
+    padding-bottom: 3rem;
+}
+
+#Approach p {
+    font-weight: 700;
+    color: whitesmoke;
+}
+
+.acks h1 {
+    font-family: Lastica;
+    text-align: center;
+    margin: 5rem auto 4rem;
+    color: #131FA8;
+}
+
+.acks td {
+    width: 50%;
+    padding: 0 4.5rem;
+    /* margin: auto 4rem;  */
+    /* margin: 10rem; */
+    font-family: serif;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+
+.acks a {
+    color: black;
+    /* text-decoration: underline; */
+}
+
+
+.feats {
+    padding-bottom: 3rem;
+}
+
+.feat-row {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 5rem;
+}
+
+.featpic:hover {
+    transform: scale(2);
+    transition-duration: 350ms;
+}
+
+#Feat {
+    /* padding: 3rem 2rem 0rem; */
+    text-align: center;
+    background-size: contain;
+    color: whitesmoke;
+    font-family: Arvo;
+    font-size: 1rem;
+}
+
+#Feat h3 {
+    color: black;
+    font-weight: 900;
+    font-size: 2rem;
+    /* margin-bottom: 3rem; */
+}
+
+.Rrow::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+.Rcolumn {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.Rcolumn img {
+    width: 100%;
+    height: auto;
+}
+
+.resources {
+    background: radial-gradient(circle at 50% 50%, #131FA8, #5527F5, #041069);
+}
+
+.resources h1 {
+    font-family: Lastica;
+    color: white;
+    text-align: center;
+    padding: 4rem 0 1rem;
+    font-size: 3rem;
+}
+
+.resources h4 {
+    text-align: left;
+    padding-left: 0.5rem;
+    font-family: Arvo;
+    font-size: large;
+    color: silver;
+    font-style: italic;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body img {
+    width: 640px;
+    height: 250px;
+}
+
+#pricing {
+    padding: 5% 7%;
+    text-align: center;
+}
+
+#pricing button {
+    margin-top: 1rem;
+    font-family: Interphase;    
+}
+
+.dwnld {
+    border: #131FA8 solid 2px;
+}
+.dwnld:hover {
+    background: linear-gradient(to right, #844EEA, #5527F5, #041069);
+    color: white;
+}
+
+.card-footer p {
+    text-align: center;
+    font-weight: bold;
+}
+.pricing-column {
+    padding: 3% 2% 0;
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anushka: The Humanoid</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="resources/logo.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav  class="navbar-style navbar navbar-expand-lg navbar-light bg-light fixed-top" id="iklotaNavbar">
+            <a class="navbar-brand" href="#carouselExampleIndicators" data-slide-to="0">
+                <img src="resources/logo.png" width="60" height="60" alt="Logo"> Team Embelias
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExampleIndicators" data-slide-to="0" onclick="makeSticky()">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExampleIndicators" data-slide-to="1" onclick="makeHome(0)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselExampleIndicators" data-slide-to="2" onclick="makeSticky()">M I i</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item">
+                    <div id="team" class="d-block w-100 shift-down">
+                        
+                        <section class="team-meet">
+                            <div id="team-meet-text">
+                                Meet Our Team <br>
+                                <b>Embelias</b>
+                            </div>
+                            <div class="middle">
+                                <div class="mouse"></div>
+                            </div>
+                        </section>
+
+                        <section id="Services" >
+                            <div class="skills">
+                                <div class="skill-row">
+                                    <img class="skillpic" id="veniPic" src="resources/team-members/shubham sir.jpeg" alt="">
+                                    <h3>Shubham Shukla</h3>
+                                    <p>
+                                        Dr. Shubham Shukla is an Associate Professor in KIET Group of Institutions and Assistant Research and Development Engineer, with an area of research in the field of Multi Robot Path Planning with Nature Inspired Algorithm. 
+                                        <br>
+                                        He acted as the project guide in the development of Anushka Robot.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="skill-row">
+                                    <img class="skillpic" id="pindPic" src="resources/team-members/atul sir.png" alt="">
+                                    <h3>Atul Kumar</h3>
+                                    <p>
+                                        Mr. Atul Kumar is an expert in Power Electronics and Circuit Designing.
+                                        <br>
+                                        He is the hardware and electrical systems incharge of development team of Anushka Robot.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="skill-row">
+                                    <img class="skillpic" id="kumbhDaanPic" src="resources/team-members/me.jpeg" alt="">
+                                    <h3>Piyush Khanna</h3>
+                                    <p>
+                                        Mr. Piyush Khanna is an experienced programmer with stack ranging from Software System Designing and Web Development to Machine Learning and IoT.
+                                        <br>
+                                        He is the incharge of software and electronic systems of development of Anushka Robot.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="skill-row last-service-row">
+                                    <img class="skillpic" id="pushpanjaliPic" src="resources/team-members/govind.jpeg" alt="">
+                                    <h3>Govind Panwar</h3>
+                                    <p>
+                                        Mr. Govind Panwar is a software and DBA intern with Team Embelias.
+                                        <br>
+                                        He is responsible for the database retrieval and dataset collection for training custom data for the robot.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="skill-row">
+                                    <img class="skillpic" id="gangaAartiPic" src="resources/team-members/jain.jpg" alt="">
+                                    <h3>Harsh Jain</h3>
+                                    <p>
+                                        Mr. Harsh Jain is a hardware and Embedded Systems intern with Team Embelias.
+                                        <br>
+                                        He is responsible for R&D on circuitry and managing the supply of electronic components.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                
+                            </div>
+                        </section>
+
+                        <section class="team-together">
+                            <section id="Name">
+                                <h2 class="FullName">
+                                    And together, <br> we 
+                                    <b>
+                                    <a class="FullName typewrite" data-period="2000"
+                                        data-type='[ "Think 🧠", "Innovate 💡", "Create 🦾", "Rock 🎸"]'>
+                                        <span class="wrap"></span>
+                                    </a></b>
+                                </h2>
+                            </section>
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <div id= "home" class="d-block w-100">
+
+                        <section class="home-entry">
+                            <video autoplay muted playsinline id="home-entry-video" src="resources/home-intro.mp4"></video>
+                        </section>
+
+                        <section class="home-features-section">
+                            <div class="home-features">
+                                <h1>
+                                    It's &nbsp; all &nbsp; possible
+                                </h1>
+                                <section id="Feat" >
+                                    <div class="feats">
+                                        <div class="feat-row">
+                                            <img class="featpic" id="veniPic" src="resources/Features/face.jpg" alt="">
+                                            <h3>Face Recognition</h3>
+                                            <p>
+                                                Anushka excels in face recognition, employing cutting-edge computer vision to memorize faces in real-time with remarkable precision. This capability ensures accurate identification across diverse expressions and features, enabling personalized interactions in dynamic environments.
+                                                <br>
+                                                The implementation incorporates popular deep learning frameworks like TensorFlow and facial landmark detection algorithms to identify key points on a face, enhancing the efficiency and accuracy of face recognition.
+                                            </p>
+                                        </div>
+                                        <div style="clear:both"></div>
+        
+                                        <div class="feat-row">
+                                            <img class="featpic" id="pindPic" src="resources/Features/speech.jpg" alt="">
+                                            <h3>Speech Recognition</h3>
+                                            <p>
+                                                With a support of over 40 Indian languages and major foreign languages including English, Spanish, Japanese etc, Anushka boasts a huge Natural Language Processing unit.
+                                                <br><br>
+                                                The NLP module in Anushka employs cutting-edge techniques, including sentiment analysis and contextual understanding, allowing it to grasp the emotional undertones of user queries. This not only enhances the quality of responses but also enables Anushka to tailor its communication style based on the user's emotional state. 
+                                            </p>
+                                        </div>
+                                        <div style="clear:both"></div>
+        
+                                        <div class="feat-row">
+                                            <img class="featpic" id="kumbhDaanPic" src="resources/Features/boss.jpg" alt="">
+                                            <h3>Bot Operations Scheduling System</h3>
+                                            <p>
+                                                Bot Operations Scheduling System, shortened to BOSS, is the heart of Anushka robot's development. It is a dedicated Pseduo-OS specially designed to merge Linux's fast instruction control and Windows' huge support for python libraries. By acting as a hypervisor, it makes the robot extremely fast and responsive to all its sensing units.
+                                                <br><br>
+                                                It also acts as a messenger queue between all the modules of the robot and can actively command a module in case one of the vital modules fails.
+                                            </p>
+                                        </div>
+                                        <div style="clear:both"></div>
+        
+                                        <div class="feat-row">
+                                            <img class="featpic" id="kumbhMelaPic" src="resources/Features/object.jpg" alt="">
+                                            <h3>Object identification and Tracking</h3>
+                                            <p>
+                                                Anushka has a dedicatedly developed computer vision program which enables it to approximate distance without a depth-sensing camera.
+                                                <br><br>
+                                                Whether it's following a person as they move around a room or tracking a specific object, Anushka's Object Tracking enhances its engagement capabilities. This feature is particularly valuable in environments where the robot needs to navigate and interact with its surroundings actively. 
+                                            </p>
+                                        </div>
+                                        <div style="clear:both"></div>
+        
+                                        <div class="feat-row">
+                                            <img class="featpic" id="gangaAartiPic" src="resources/Features/vedic.jpg" alt="">
+                                            <h3>Cultural Integration with Vedic Principles</h3>
+                                            <p>
+                                                The entire system design and brain's response system of Anushka has been built after a thorough research on the Vedic views of human mind's architecture.
+                                                <br><br>
+                                                This integration aims to align the robot's decision-making processes with the holistic understanding of the mind presented in Vedic philosophy. Components such as 'Chitta', 'Manas', 'Ahankaram' and 'Buddhi' have been incorporated into the architecture of robot's Intelligence.
+                                            </p>
+                                        </div>
+                                        <div style="clear:both"></div>
+        
+                                        <div class="feat-row last-service-row">
+                                            <img class="featpic" id="pushpanjaliPic" src="resources/Features/iot.jpg" alt="">
+                                            <h3>IoT and Automation</h3>
+                                            <p>
+                                                Anushka can integrate itself seamlessly into smart home, autonomously managing appliances like fans and bulbs based on predefined conditions. 
+                                                <br><br>
+                                                Anushka also has the ability to completely automate the task of application writing and printing by performing print jobs from remote printers. 
+                                                <br>
+                                                She can also make phone calls as well as send and recieve Whatsapp messages autonomously.
+                                            </p>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                    </div>
+                                </section>
+                                
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="home-how">
+                                <h1>But, &nbsp; How?</h1>
+                                <section id="Features">
+                                    <div class="row">
+                            
+                                        <div class="col-lg-6">
+                                            <a href="#carouselExampleIndicators" data-slide-to="0" onclick="makeSticky()"><img class="SVG1" src="resources/SVGs/team.svg" alt="" srcset=""> </a>
+                                            <br>
+                                            <h3>Team</h3>
+                                            <p>Our beloved team worked tirelessly for 1.5 years to bring Anushka to life.</p>
+                                        </div>
+                            
+                                        <div class="col-lg-6">
+                                            <a href="#carouselExampleIndicators" data-slide-to="2" onclick="makeSticky()"><img class="SVG2" src="resources/SVGs/MII.jpg" alt=""></a>
+                                            <br>
+                                            <h3>Make In India</h3>
+                                            <p>Anushka, The Humanoid has been made to be represent Indian Robotics on international level.</p>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="resources">
+                                <h1>
+                                    Resources
+                                </h1>                              
+                                <section id="pricing">
+                                    <h4>
+                                        *Note: All the media files are downloadable and open up in separate tab upon clicking. Thumbnails have been attached for video files.
+                                    </h4>  
+
+                                    <div class="row">
+
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/TDP.pdf" target="_blank">
+                                                        <img src="resources/TDP-thumb.png" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/TDP.pdf" target="_blank" download="resources/TDP.pdf">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>The Team Description Paper of Team Embelias for Robocup '24.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                        <div class="card mb-4 box-shadow">
+                                            <div class="card-body">
+                                                <a href="resources/robot-media/convo.mp4" target="_blank">
+                                                    <img src="resources/robot-media/convo-thumb.png" alt="Media 2" style="width:100%">
+                                                </a>
+                                                
+                                                <a href="resources/robot-media/convo.mp4" target="_blank" download="resources/robot-media/convo.mp4">
+                                                <button type="button" class="btn btn-lg btn-block dwnld">
+                                                    Download
+                                                </button>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p>Anushka in an interaction, showcasing its knowledge and creativity.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/features.mp4" target="_blank">
+                                                        <img src="resources/robot-media/features-thumb.png" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/features.mp4" target="_blank" download="resources/robot-media/features.mp4">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>
+                                                        Anushka showcasing its various gestures and sync of hands, neck and eye modules.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/follow.mp4" target="_blank">
+                                                        <img src="resources/robot-media/follow-thumb.png" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/follow.mp4" target="_blank" download="resources/robot-media/follow.mp4">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>Demonstration of Anushka's automatic tracking and following system.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                        <div class="card mb-4 box-shadow">
+                                            <div class="card-body">
+                                                <a href="resources/robot-media/hands.mp4" target="_blank">
+                                                    <img src="resources/robot-media/hands-thumb.png" alt="Media 2" style="width:100%">
+                                                </a>
+                                                
+                                                <a href="resources/robot-media/hands.mp4" target="_blank" download="resources/robot-media/hands.mp4">
+                                                <button type="button" class="btn btn-lg btn-block dwnld">
+                                                    Download
+                                                </button>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p>Anushka the robot showcasing the range of hand gestures she can make.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/Jaw Module.mp4" target="_blank">
+                                                        <img src="resources/robot-media/jaw-thumb.png" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/Jaw Module.mp4" target="_blank" download="resources/robot-media/Jaw Module.mp4">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>Working of Jaw mechanism of the robot to synchronize with speech outputs.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                        <div class="card mb-4 box-shadow">
+                                            <div class="card-body">
+                                                <a href="resources/robot-media/Eye Module.mp4" target="_blank">
+                                                    <img src="resources/robot-media/eye-thumb.png" alt="Media 2" style="width:100%">
+                                                </a>
+                                                
+                                                <a href="resources/robot-media/Eye Module.mp4" target="_blank" download="resources/robot-media/Eye Module.mp4">
+                                                <button type="button" class="btn btn-lg btn-block dwnld">
+                                                    Download
+                                                </button>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p>Starting gesture of the eye module of Anushka robot.</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/anushka-spedup.mp4" target="_blank">
+                                                        <img src="resources/robot-media/anushka-spedup-thumb.png" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/anushka-spedup.mp4" target="_blank" download="resources/robot-media/anushka-spedup.mp4">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>Anushka the robot welcoming guests and strangers.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/proto.mp4" target="_blank">
+                                                        <img src="resources/robot-media/proto-thumb.png" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/proto.mp4" target="_blank" download="resources/robot-media/proto.mp4">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>
+                                                        The early stage of development, prototype of the Anushka robot.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                        <div class="card mb-4 box-shadow">
+                                            <div class="card-body">
+                                                <a href="resources/robot-media/yogi.jpeg" target="_blank">
+                                                    <img src="resources/robot-media/yogi.jpeg" alt="Media 2" style="width:100%">
+                                                </a>
+                                                
+                                                <a href="resources/robot-media/yogi.jpeg" target="_blank" download="resources/robot-media/yogi.jpeg">
+                                                <button type="button" class="btn btn-lg btn-block dwnld">
+                                                    Download
+                                                </button>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <p>
+                                                    Anushka welcoming Sri Yogi Adityanath, Chief Minister of Uttar Pradesh, in the institute.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/atul.jpeg" target="_blank">
+                                                        <img src="resources/robot-media/atul.jpeg" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/atul.jpeg" target="_blank" download="resources/robot-media/atul.jpeg">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>
+                                                        Anushka talking to Dr. Atul Kothari, National Secretary, SSUN India.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="pricing-column col-lg-4 col-md-6">
+                                            <div class="card mb-4 box-shadow">
+                                                <div class="card-body">
+                                                    <a href="resources/robot-media/together.jpeg" target="_blank">
+                                                        <img src="resources/robot-media/together.jpeg" alt="Media 2" style="width:100%">
+                                                    </a>
+                                                    
+                                                    <a href="resources/robot-media/together.jpeg" target="_blank" download="resources/robot-media/together.jpeg">
+                                                    <button type="button" class="btn btn-lg btn-block dwnld">
+                                                        Download
+                                                    </button>
+                                                    </a>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <p>
+                                                        The family of Anushka, together in the Center of Robotics at KIET Group of Institutions.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="other" class="d-block w-100 shift-down">
+                        
+                        <section class="robocup-built">
+                            <div id="robocup-built-text">
+                                Built As a <br>
+                                <b>Make In India Initiative</b>
+                            </div>
+                            <div class="middle">
+                                <div class="mouse"></div>
+                            </div>
+                        </section>
+
+                        <section class="about-robocup">
+                           
+                            <table>
+                                <tr>
+                                    <td>
+                                        <a href="https://www.makeinindia.com/"><h2>About MakeInIndia</h2></a>
+                                        <div class="patla">
+                                            <p>
+                                                The Make in India initiative was launched by Prime Minister in September 2014 as part of a wider set of nation-building initiatives. Devised to transform India into a global design and manufacturing hub, Make in India was a timely response to a critical situation. By 2013, the much-hyped emerging markets bubble had burst, and India’s growth rate had fallen to its lowest level in a decade. 
+                                                <br><br>
+                                                The promise of the BRICS Nations (Brazil, Russia, India, China and South Africa) had faded, and India was tagged as one of the so-called ‘Fragile Five’. Global investors debated whether the world’s largest democracy was a risk or an opportunity. India’s 1.2 billion citizens questioned whether India was too big to succeed or too big to fail. India was on the brink of severe economic failure, desperately in need of a big push.
+                                            </p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.makeinindia.com/">
+                                        <img id="robocup-image" src="resources/miiport.jpg" alt="Robocup Image" srcset="">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </section>
+
+                        <section id="Approach" >
+                            <div class="approachClass">
+
+                                <h1>Our Novel Approaches</h1>  
+
+                                <div class="approach-row">
+                                    <img class="approachPic" id="veniPic" src="resources/approach/rob1.png" alt="">
+                                    <h3>Single Camera Depth Approximation</h3>
+                                    <p>
+                                        The robot uses a novel approach for distance approximation using computer vision. In this approach, the robot is able to efficiently approximate the distance from an object or person by analysing its image and comparing it to the size of the respective standard object or body part.
+                                        <br><br>
+                                        This is helpful in case where there is no other way of depth approximation by ultrasonic waves or Infrared waves sensor system. This technique also enables the robot to tag the person to be followed as well as maintain a formal distance from him/her.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="approach-row">
+                                    <img class="approachPic" id="pindPic" src="resources/approach/rob3.png" alt="">
+                                    <h3>Speech Question Cache-ing</h3>
+                                    <p>
+                                        A novel approach for ’question cache-ing’ allows the robot to store the questions and their answers locally based on their frequency of being asked in normal conversations.
+                                        <br> <br>
+                                        Thus, in case of repeating questions, the robot doesn't need to necessarily scrap answers from web but fetch it from local question cache. By utilizing NLP, Anushka can interpret and extract meaning from spoken or written text, enabling it to understand user commands, generate appropriate responses, and engage in natural language conversations.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="approach-row">
+                                    <img class="approachPic" id="kumbhDaanPic" src="resources/approach/rob4.png" alt="">
+                                    <h3>Facial Feature Forgetfulness</h3>
+                                    <p>
+                                        Novel approach for identifying and prioritizing humans in real-time has been applied to the face recognition system to mimic human behavior. The face recognition system uses deep learning Convolutional Neural Network for first creating face embeddings and storing them in local database.
+                                        <br><br>
+                                        This database is routinely checked for repeating faces and their mapped names. Priority is given to people based on their number of times meeting the robot and time since last meeting. On a routine-base dumping, faces are ”forgotten” if their priority is less, that is, the robot has met the person only once/twice and long time ago.
+                                    </p>
+                                </div>
+                                <div style="clear:both"></div>
+
+                                <div class="approach-row">
+                                    <img class="approachPic" id="letaRobo" src="resources/approach/rob2.png" alt="">
+                                    <h3>Vedic Weave</h3>
+                                    <p>
+                                        The entire system design and brain's response system of Anushka has been built after a thorough research on the Vedic views of human mind's architecture.
+                                        <br> <br>
+                                        Novel prioritization techniques have been employed in the robot, segregating each data unit as a portion to be remembered or discarded according to the robot's discretion. This quadriplex architecture comes from the vedic texts, and named 'Chitta', 'Manas', 'Ahankaram', 'Buddhi'.
+                                    </p>
+                                </div>
+                                <h4>
+                                    *Note: The usage of novel approaches has been dealt in detail in the <a style="color: white;" href="#carouselExampleIndicators" data-slide-to="1" onclick="makeHome(0)">Team Description Paper </a>, available for download in Resources section.
+                                </h4>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="acks">
+                                <h1>
+                                    Acknowledgements
+                                </h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                <a href="https://www.cs.cmu.edu/~illah/PAPERS/sage.pdf">
+
+                                                    [1] &nbsp &nbsp &nbsp Nourbakhsh, I. R., J. Bobenage, et al. (1999). Affective mobile robot educator with a full-time job, Artificial Intelligence, 114, (1-2), 95-124. 
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <a href="https://www.researchgate.net/publication/4046096_Anthropomorphism_as_a_pervasive_design_concept_for_a_robotic_assistant">
+                                                    
+                                                    [2] &nbsp &nbsp &nbsp Ioannis Iossi dis1, Christoph Theis, Claudia Grote, Christian Faubel, and Gregor Sch¨oner, “Anthropomorphism as a pervasive design concept for a robotic assistant”, In Proceedings Of The IEEE/RSJ International Conference On Intelligent Robots And Systems (IROS 2003), 2003.
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <a href="https://www.researchgate.net/publication/216813951_Human-Robot_Collaboration_A_Literature_Review_and_Augmented_Reality_Approach_In_Design">
+                                                    
+                                                    [3] &nbsp &nbsp &nbsp Scott A. Green, Mark Billinghurst, XiaoQi Chena and J. Geoffrey Chasea, “HumanRobot Collaboration: A Literature Review and Augmented Reality Approach in Design”, International Journal of Advanced Robotic Systems, ISSN 1729-8806, pp. 1-18, Vol. 5, No. 1 2008.
+                                                </a>
+                                            </p>    
+                                            <p>
+                                                <a href="https://core.ac.uk/download/pdf/29403926.pdf">
+                                                    [4] &nbsp &nbsp &nbsp Miguel Ángel, Salichs, Sanchez-Caballero "Human Inspired Humanoid Robot Control Architecture", Department of Systems Engineering and Automation Leganés, July 2012.
+                                                </a>
+                                            </p>
+                                            <p>
+                                                <a href="https://www.researchgate.net/publication/327897047_Coordinated_Control_of_a_Dual-Arm_Space_Robot_Novel_Models_and_Simulations_for_Robotic_Control_Methods">
+                                                    
+                                                    [5] &nbsp &nbsp &nbsp Lingling shi, Hiranya Jayakody, Jayantha Katupitiya, “Coordinate control of a DualArm Space Robot”, IEEE Robotics and Automation Magazine, Isuue no.4, Volume 25, pp. 76-85, 2018.
+                                                </a>
+                                            </p>
+                                        </td>
+
+                                        <td>
+                                            <p>
+                                                <a href="https://www.researchgate.net/publication/313539032_Development_of_a_self_reliant_humanoid_robot_for_sketch_drawing">
+                                                    
+                                                    [6] &nbsp &nbsp &nbsp Avinash Kumar Singh, Neha Baranwal, G. C Nandi, "Development of a self reliant humanoid robot for sketch drawing", 10.1007/s11042-017-4358-x.
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                <a href="https://www.researchgate.net/publication/327191901_On_Humanoid_Co-Robot_Locomotion_when_Mechanically_Coupled_to_a_Hman_Partner">
+                                                    
+                                                    [7] &nbsp &nbsp &nbsp  Keitaro Nishimura, Jean Vaz, Paul Oh, 
+                                                    "On Humanoid Co-Robot Locomotion when Mechanically Coupled to a Hman Partner", 2018 15th International Conference on Ubiquitous Robots (UR).
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                <a href="https://dl.acm.org/doi/abs/10.1109/HUMANOIDS.2017.8239553">
+                                                    
+                                                    [8] &nbsp &nbsp &nbsp  Laura Steffan, Lukas Kaul, Tamim Asfour, “Online stability estimation based on inertial sensor data for human and humanoid fall prevention” , 2017 IEEE-RAS 17th International Conference on Humanoid Robotics, pp. 171-177.
+                                                </a>
+                                            </p>
+
+                                            <p>
+                                                <a href="https://experts.azregents.edu/en/publications/inferring-guidance-information-in-cooperative-human-robot-tasks">
+                                                    [9] &nbsp &nbsp &nbsp  Erik Berger, David Vogt, Nooshin Haji-Ghassemi, “Inferring guidance information in cooperative human-robot tasks”, 2013 IEEE-RAS 17th International Conference on Humanoid Robotics, pp. 124-129, 2013.
+                                                </a>
+                                                
+                                            </p>
+
+                                            <p>
+                                                <a href="https://www.researchgate.net/publication/222692784_Painting_Robot_with_Multi-Fingered_Hands_and_Stereo_Vision">
+                                                    [10] &nbsp &nbsp &nbsp Shunsuke Kudoh, Koichi Ogawara, Miti Ruchanurucks, Katsushi Ikeuchi, "Painting Robot with Multi-Fingered Hands and Stereo Vision",  like2006 IEEE International Conference onMultisensor Fusion and Integration for Intelligent SystemsSeptember 3-6, 2006, Heidelberg, Germany.
+                                                </a>
+                                                
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>                                
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Made with ❤️ by Piyush Khanna
+        </footer>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
