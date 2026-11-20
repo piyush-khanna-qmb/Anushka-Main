@@ -561,6 +561,7 @@ footer {
 .card-body img {
     width: 640px;
     height: 250px;
+    object-fit: cover;
 }
 
 #pricing {
