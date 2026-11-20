@@ -1,0 +1,21 @@
+# Anushka: The Humanoid
+
+> Anushka is India's humanoid robot, capable of face, object and gesture
+> recognition and multilingual speech interaction. She was designed and
+> built by Piyush Khanna and Team31, his team, over four years.
+
+Creator: Piyush Khanna (https://piyushkhanna.space/)
+Permanent home: https://piyushkhanna.space/project/anushka
+This site (anushkathehumanoid.com) is Anushka's original site; the
+piyushkhanna.space page above is her current, actively maintained home.
+
+## Capabilities
+
+- 64+ hand gestures
+- 20+ eye expressions
+- 120+ languages spoken and recognized, offline
+- Home automation: controls fans, lights and other appliances
+- Autonomous calling system: places phone calls and sends messages on
+  her own
+- Decision-making modeled on Vedic philosophy of the human mind
+  (Chitta, Manas, Ahankaram, Buddhi)
